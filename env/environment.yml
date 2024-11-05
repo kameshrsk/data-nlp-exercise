@@ -1,0 +1,18 @@
+name: political-dashboard
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip>=23.0
+  - pandas>=2.2.0
+  - streamlit>=1.32.0
+  - python-dotenv>=1.0.0
+  - transformers>=4.37.0
+  - nltk>=3.8.1
+  - pip:
+    - torch
+    - praw>=7.7.1
+    - newsapi-python>=0.2.7
+    - tweepy>=4.14.0
+    - wordcloud>=1.9.3
