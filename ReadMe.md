@@ -16,7 +16,40 @@
 3) Develop a Analyzer script that utilizes LLM using Langchain
 4) Use streamlit for developing the frontend.
 
-#Files and Functionalities
+# Setup and Usage
+
+## Create Conda Environment
+
+   run "conda env create -f env/environment.yml" command. this will create the Conda environment with necessary packages and libraries
+
+## Aquiring API keys:
+
+   In the .env file we can see 3 api keys
+
+   ### NEWS_API_KEY
+
+      Go to "https://newsapi.org/" website and create an account this will give you the api key.
+
+   ### REDDIT_CLIENT_SECRET & REDDIT_CLIENT_ID
+
+      Go to "https://www.reddit.com/prefs/apps" and click create another app
+      Fill app name
+      Select "script" as application type
+      Fill a brief description about the app
+      Give streamlit's default port (localhost:8501) as Redirect URI
+      Click Create app.
+      This will create a new app and "REDDIT_CLIENT_SECRET" is shown in the app. The "REDDIT_CLIENT_ID" will be sent to mail  id. Alternatively you can see "REDDIT_CLIENT_ID" next to the app icon.
+
+# Running the app
+
+   Clone this repo and create the .env file with the acquired API keys. 
+
+   run:
+   
+      streamlit run app.py
+
+   This will run the streamlit application in the localhost:8501
+# Files and Functionalities
 
 ## utils.py
 
